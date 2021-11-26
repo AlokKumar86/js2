@@ -1,0 +1,59 @@
+<!-- Create an object ‘Person’ in Java Script,  which will have  ‘FirstName’, ’LastName’ and ‘Office Address’ 
+as properties within it. Create three Persons and print all those three properties. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+    <style>
+        *{
+            color: rgb(6, 53, 53);
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h2>Create an object ‘Person’ in Java Script,  which will have  ‘FirstName’, ’LastName’ and ‘Office Address’ 
+    as properties within it. Create three Persons and print all those three properties.</h2>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+</body>
+
+<script>
+    let Person = {
+        Person1 : {
+            FirstName : "Jack",
+            LastName : "Tomer",
+            "Office Address" : "Near Rambhag, Srinagar, J&K."
+        },
+        Person2 : {
+            FirstName : "Tom",
+            LastName : "Cruise",
+            "Office Address" : "Near City hospital, Kanpur, U.P."
+        },
+        Person3 : {
+            FirstName : "Bob",
+            LastName : "Lee",
+            "Office Address" : "Near Railway Station, Chandrapur, M.H."
+        }
+    }
+    
+    console.log(Person.Person1.FirstName);
+    console.log(Person.Person1.LastName);
+    console.log(Person.Person1["Office Address"]);
+    document.getElementById("demo1").innerHTML=Person.Person1.FirstName + " " + Person.Person1.LastName + " , " + Person.Person1["Office Address"];
+    
+    console.log(Person.Person2.FirstName);
+    console.log(Person.Person2.LastName);
+    console.log(Person.Person2["Office Address"]);
+    document.getElementById("demo2").innerHTML=Person.Person2.FirstName + " " + Person.Person2.LastName + " , " + Person.Person2["Office Address"];
+    
+    console.log(Person.Person3.FirstName);
+    console.log(Person.Person3.LastName);
+    console.log(Person.Person3["Office Address"]);
+    document.getElementById("demo3").innerHTML=Person.Person3.FirstName + " " + Person.Person3.LastName + " , " + Person.Person3["Office Address"];
+</script>
+</html>
